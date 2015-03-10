@@ -5,20 +5,22 @@ html(lang='en')
     title Car Trip
     link(rel='stylesheet', href='/style.css')
   body
-    h1 Car Trip
-    p Trip Distance
-    input#distance(type='number')
-    p Mile Per Gallon
-    input#milePerGal(type='number')
-    p Full Tank Gallons
-    input#fullTankGal(type='number')
-    p Price Per Gallon
-    input#pricePerGal(type='number')
-    button#go Go!
-    #results
-      p#totalStops
-      p#totalCost
-      p#galLeft
+    .container
+      h1 Car Trip Evaluator
+      p Trip Distance (in miles)
+      input#distance(type='number')
+      p Your Car Mile Per Gallon (miles/gallons)
+      input#milePerGal(type='number')
+      p Your Car Full Tank Gallons (gallons)
+      input#fullTankGal(type='number')
+      p Price of Gas Per Gallon (in $)
+      input#pricePerGal(type='number')
+      .row
+        button#go Go!
+    .container
+      h3#totalStops
+      h3#totalCost
+      h3#galLeft
     //- script(src='/vendor/jquery/dist/jquery.js')
     script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js")
     script(src='/main.js')
